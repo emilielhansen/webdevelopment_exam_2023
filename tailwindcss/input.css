@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* set some custom styles it belongs to */
+@layer components{
+  main{
+    @apply absolute top-0 left-0 w-full overflow-y-scroll h-full bg-slate-300 p-2
+  }
+  nav {
+    @apply bg-neutral-200
+  }
+  nav a{
+    @apply text-black bg-slate-100 px-8 py-2 rounded-full
+  }
+  nav a:hover {
+    @apply bg-neutral-400 text-white
+  }
+  .btn:hover {
+    @apply bg-neutral-400 text-white px-8 py-2 rounded-full
+  }
+}
+
